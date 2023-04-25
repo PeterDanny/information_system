@@ -2,19 +2,23 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 header {
-  background-color: green;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url(../images/NYSC.jpg);
   color: white;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 1rem;
+  height: 100vh;
 }
 
 nav {
     position: relative;
+    display: flex;
 }
 
 nav ul {
@@ -34,6 +38,7 @@ nav a {
 
 .hamburger {
     display: none;
+    /* transition: all 1s ease-in-out; */
 }
 
 .dropdown {
@@ -42,6 +47,10 @@ nav a {
 
 .drop-menu {
     display: none;
+}
+
+.drop-menu a {
+  margin-top: 10px;
 }
 
 .dropdown-content {
@@ -73,7 +82,7 @@ section {
 }
 footer {
   color: white;
-  background: green;
+  background: #008000;
   padding: 0.5rem;
   text-decoration: none;
 }
@@ -96,11 +105,16 @@ footer {
         align-items: center;
         gap: 10px;
 
-        background-color: green;
+        background-color: #008000bb;
         padding: 20px;
         position: absolute;
         top: 30px;
         right: 0px;
         width:200px;
+        border-radius: 25px;
+        height: 25rem;
+        width: 15rem;
+        align-items: center;
+        justify-content: center;
     }
 }
